@@ -22,3 +22,13 @@ const appearOnScroll = new IntersectionObserver((entries, observer) => {
 faders.forEach(fader => {
     appearOnScroll.observe(fader);
 });
+
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.querySelector(".nav-links"); // selects by class
+
+if (hamburger && navLinks) {
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+        hamburger.classList.toggle("active");
+    });
+}
