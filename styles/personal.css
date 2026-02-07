@@ -28,10 +28,30 @@ body {
     z-index: 10;
 }
 
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    position: relative;
+}
+
+.header-content img {
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
+}
+
 .logo {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: 700;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
+}
+
+.header-content .logo:hover {
+    color: #4f7cff;
+    transition: color 0.3s ease;
+    cursor: default;
 }
 
 .nav-links {
