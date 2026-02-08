@@ -38,7 +38,6 @@ body {
     background: #0f1220;
     border-bottom: 1px solid rgba(255,255,255,0.08);
     padding: 1.2rem 0;
-    position: sticky;
     top: 0;
     z-index: 10;
 }
